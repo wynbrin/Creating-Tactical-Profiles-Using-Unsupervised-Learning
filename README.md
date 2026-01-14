@@ -87,11 +87,16 @@ Potential extensions include:
 - Building an interactive dashboard for exploring tactical maps and cluster identities
 
 **Project Structure**
-├── data/                # Raw and processed datasets
-├── notebooks/           # PCA, clustering, and analysis notebooks
-├── src/                 # Feature engineering and modeling scripts
-├── visuals/             # Plots and exported figures
-└── README.md            # Project documentation
+
+├── data/                  # Raw and processed datasets
+
+├── notebooks/             # PCA, clustering, and analysis notebooks
+
+├── src/                   # Feature engineering and modeling scripts
+
+├── visuals/               # Plots and exported figures
+
+└── README.md              # Project documentation
 
 **Purpose**
 This project demonstrates how statistical modeling can reveal meaningful tactical structure in football. It blends:
