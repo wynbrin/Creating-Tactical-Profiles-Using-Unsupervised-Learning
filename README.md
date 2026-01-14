@@ -15,6 +15,7 @@ Only seasons containing the advanced metrics required for feature engineering we
 **Methodology** 
 
 **1. Feature Engineering**
+
 Metrics were selected to capture multiple dimensions of team behavior, including:
 - Chance creation & shot quality
   
@@ -28,6 +29,7 @@ Metrics were selected to capture multiple dimensions of team behavior, including
 Custom metrics such as Finishing Efficiency and Assist Efficiency were engineered to quantify over/under‑performance relative to expected values.
 
 **2. Dimensionality Reduction (PCA)**
+
 PCA was used to reduce the feature space into interpretable tactical axes.
 Key components captured:
 - PC1: Proactivity vs reactivity (xG, goals, possession vs GA, verticality)
@@ -37,6 +39,7 @@ Key components captured:
 These axes form a 2D tactical map used for clustering and visualization.
 
 **3. Clustering (k‑Means)**
+
 Multiple values of k were tested to understand how cluster count affects tactical separation.
 Evaluation metrics included:
 - Silhouette Score
@@ -55,10 +58,13 @@ The analysis identifies k=5 as the optimal balance between:
 Beyond k=5, cluster quality declines sharply, indicating diminishing returns.
 
 **Results**
+
 **Tactical Archetypes**
+
 The model identifies five distinct tactical profiles, each representing a coherent style of play derived from statistical behavior.
 
 **Cluster Evaluation**
+
 Silhouette scores show:
 - Strong separation at k=2
 - Gradual decline through k=5
@@ -66,6 +72,7 @@ Silhouette scores show:
 This pattern reflects the natural overlap of real football styles and supports the chosen baseline.
 
 **Visualizations**
+
 The project includes:
 - PCA tactical maps
 - Silhouette‑vs‑k plots
@@ -74,11 +81,13 @@ The project includes:
 
 
 **Data Limitations**
+
 - Advanced metrics are only available from 2017–18 onward, limiting historical depth.
 - Only Premier League seasons are included; cross‑competition tactical variation is not captured.
 - Team‑season aggregates cannot reflect in‑match or player‑level tactical nuance.
 
 **Future Work**
+
 Potential extensions include:
 - Expanding to other competitions (e.g., Champions League, top European leagues)
 - Incorporating more seasons as advanced metrics become available
@@ -99,6 +108,7 @@ Potential extensions include:
 └── README.md              # Project documentation
 
 **Purpose**
+
 This project demonstrates how statistical modeling can reveal meaningful tactical structure in football. It blends:
 - rigorous machine learning
 - thoughtful feature engineering
